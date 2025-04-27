@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div className='mb-10'>
+        <div className='pb-20 lg:pb-35'>
             <div>
                 <div className="navbar bg-transparent backdrop-blur-md shadow-sm fixed top-0 left-0 right-0 z-50 lg:px-10 md:px-5 sm:px-3">
                     <div className="navbar-start">
@@ -53,7 +53,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <a className="btn">Set A Meeting</a>
+                        <a className="btn bg-[#EE2461] border-0 shadow rounded-full text-white">Set A Meeting</a>
                     </div>
                 </div>
             </div>
