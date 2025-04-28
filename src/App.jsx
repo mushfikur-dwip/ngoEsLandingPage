@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import Brands from './components/Brands';
+import Brands from './components/Brand/Brands';
 import OurServices from './components/OurServices';
 import SingleService from './components/SingleService';
 
