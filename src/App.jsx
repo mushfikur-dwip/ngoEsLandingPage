@@ -4,7 +4,7 @@ import HeroSection from './components/HeroSection';
 import Brands from './components/Brand/Brands';
 import OurServices from './components/Service/OurServices';
 import OurWorks from './components/OurWork/OurWorks';
-import OurProcess from './components/OurProcess';
+import OurProcess from './components/OurProcess/OurProcess';
 
 const App = () => {
   return (
