@@ -2,17 +2,20 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import Brands from './components/Brand/Brands';
-import OurServices from './components/OurServices';
-import SingleService from './components/SingleService';
+import OurServices from './components/Service/OurServices';
+import OurWorks from './components/OurWork/OurWorks';
+import OurProcess from './components/OurProcess';
 
 const App = () => {
   return (
     <>
-      <div class="bg-slate-900 px-2" >
+      <div class="bg-gradient-to-t from-[#0f172a]  to-[#334155] px-2" >
         <Navbar></Navbar>
         <HeroSection></HeroSection>
         <Brands></Brands>
         <OurServices></OurServices>
+        <OurWorks></OurWorks>
+        <OurProcess></OurProcess>
       </div>
     </>
   );
