@@ -25,6 +25,6 @@ export default function SingleWork() {
                 <h1 className="text-lg font-semibold"><a href="http://google.com">Brac Limited</a></h1>
                 <p className="text-sm text-[#ee2461] dark:text-white/60">Animation Explainer Video</p>
             </div>
-        </motion.div>
+        </motion.div> 
     );
 }
