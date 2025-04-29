@@ -5,6 +5,7 @@ import Brands from './components/Brand/Brands';
 import OurServices from './components/Service/OurServices';
 import OurWorks from './components/OurWork/OurWorks';
 import OurProcess from './components/OurProcess/OurProcess';
+import Pricing from './components/PricingPlans';
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
         <OurServices></OurServices>
         <OurWorks></OurWorks>
         <OurProcess></OurProcess>
+        <Pricing></Pricing>
+
       </div>
     </>
   );
