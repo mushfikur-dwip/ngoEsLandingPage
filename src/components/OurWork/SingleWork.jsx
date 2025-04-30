@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useScrollAnimation, modernFadeUp } from '../../hooks/useScrollAnimation';
+import { useScrollAnimation, modernFadeUp,  } from '../../hooks/useScrollAnimation';
 
 export default function SingleWork() {
     const { ref, controls } = useScrollAnimation();

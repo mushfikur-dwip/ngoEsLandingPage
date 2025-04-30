@@ -1,15 +1,30 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import  HeroVideoDialog  from "@/components/magicui/hero-video-dialog";
+import HeroVideoDialog from "@/components/magicui/hero-video-dialog";
 
+// container with staggered children
+const containerVariants = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.15,
+            delayChildren: 0.1,
+        },
+    },
+};
+
+// fade and float up with slight scale
 const fadeInUp = {
     hidden: { opacity: 0, y: 40, scale: 0.98 },
     visible: {
         opacity: 1,
         y: 0,
         scale: 1,
-        transition: { duration: 0.8, ease: [0.2, 0.8, 0.2, 1] },
+        transition: {
+            duration: 0.8,
+            ease: [0.2, 0.8, 0.2, 1],
+        },
     },
 };
 
@@ -19,43 +34,44 @@ const HeroSection = () => {
 
     useEffect(() => {
         if (inView) {
-            controls.start('visible');
+            controls.start("visible");
         }
     }, [inView, controls]);
 
     return (
-        <div ref={ref} className='flex flex-col px-2 py-10 lg:pt-4 lg:py-20'>
-
+        <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={containerVariants}
+            className="flex flex-col px-2 py-10 lg:pt-4 lg:py-20"
+        >
             {/* Heading */}
             <motion.div
-                className='flex flex-col items-center text-center pb-4'
                 variants={fadeInUp}
-                initial="hidden"
-                animate={controls}
+                className="flex flex-col items-center text-center pb-4"
             >
-                <h1 className='text-[38px] text-white lg:text-7xl font-bold tracking-tight leading-10 lg:leading-[70px] px-6 lg:px-24'>
-                    SaaS Videos that <span className='text-[#EE2461]'> Educate,<br className='hidden lg:block' /> Engage, and Convert.</span>
+                <h1 className="text-[38px] text-white lg:text-7xl font-bold tracking-tight leading-10 lg:leading-[70px] px-6 lg:px-24">
+                    SaaS Videos that{" "}
+                    <span className="text-[#EE2461]">
+                        Educate,<br className="hidden lg:block" /> Engage, and Convert.
+                    </span>
                 </h1>
             </motion.div>
 
             {/* Subtitle */}
             <motion.p
-                className='text-center text-white max-w-3xl mx-auto px-4'
                 variants={fadeInUp}
-                initial="hidden"
-                animate={controls}
-                transition={{ delay: 0.2 }}
+                className="text-center text-white max-w-3xl mx-auto px-4"
             >
-                Simplify complex concepts, showcase your product's value, and engage your audience with done-for-you video solutions.
+                Simplify complex concepts, showcase your product's value, and engage
+                your audience with done-for-you video solutions.
             </motion.p>
 
             {/* Buttons */}
             <motion.div
-                className='flex gap-5 justify-center pt-6 lg:pt-10'
                 variants={fadeInUp}
-                initial="hidden"
-                animate={controls}
-                transition={{ delay: 0.4 }}
+                className="flex gap-5 justify-center pt-6 lg:pt-10"
             >
                 <motion.button
                     className="btn text-white rounded-full bg-[#ee2461] border-0 shadow px-6 py-2"
@@ -75,11 +91,8 @@ const HeroSection = () => {
 
             {/* Video Dialog */}
             <motion.div
-                className="w-full lg:max-w-[1050px] mx-auto mt-10"
                 variants={fadeInUp}
-                initial="hidden"
-                animate={controls}
-                transition={{ delay: 0.6 }}
+                className="w-full lg:max-w-[1050px] mx-auto mt-10"
             >
                 <HeroVideoDialog
                     className="block dark:hidden"
@@ -89,7 +102,7 @@ const HeroSection = () => {
                     thumbnailAlt="Video Thumbnail"
                 />
             </motion.div>
-        </div>
+        </motion.div>
     );
 };
 

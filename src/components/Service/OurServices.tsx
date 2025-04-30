@@ -6,6 +6,7 @@ import {
   useScrollAnimation,
   modernFadeUp,
   staggerContainer,
+  modernFadeLeft,
 } from "../../hooks/useScrollAnimation";
 
 const OurServices = () => {
@@ -20,7 +21,7 @@ const OurServices = () => {
       className="grid lg:grid-cols-2 gap-4 px-2 max-w-[1400px] items-center mx-auto"
     >
       <motion.div
-        variants={modernFadeUp}
+        variants={modernFadeLeft}
         className="py-3 flex flex-col items-start"
       >
         <BrandBtn />

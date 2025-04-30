@@ -28,6 +28,18 @@ export const modernFadeUp = {
     },
   },
 };
+export const modernFadeLeft = {
+  hidden: { opacity: 0, x: -60, scale: 0.98 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    scale: 1,
+    transition: {
+      duration: 0.8,
+      ease: [0.2, 0.8, 0.2, 1], // smooth spring feel
+    },
+  },
+};
 
 export const staggerContainer = {
   hidden: {},
