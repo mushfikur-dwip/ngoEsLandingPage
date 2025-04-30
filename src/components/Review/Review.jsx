@@ -35,6 +35,7 @@ const Review = () => {
                 <SingleReview></SingleReview>
                 <SingleReview></SingleReview>
             </div>
+            <p>test</p>
         </>
     );
 };
