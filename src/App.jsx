@@ -6,6 +6,7 @@ import OurServices from './components/Service/OurServices';
 import OurWorks from './components/OurWork/OurWorks';
 import OurProcess from './components/OurProcess/OurProcess';
 import Pricing from './components/PricingPlans';
+import Review from './components/Review/Review';
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         <OurWorks></OurWorks>
         <OurProcess></OurProcess>
         <Pricing></Pricing>
-
+        <Review></Review>
       </div>
     </>
   );
