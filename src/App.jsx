@@ -7,6 +7,8 @@ import OurWorks from './components/OurWork/OurWorks';
 import OurProcess from './components/OurProcess/OurProcess';
 import Pricing from './components/PricingPlans';
 import Review from './components/Review/Review';
+import Faq from './components/Faq/Faq';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -20,6 +22,9 @@ const App = () => {
         <OurProcess></OurProcess>
         <Pricing></Pricing>
         <Review></Review>
+        <Faq></Faq>
+        <Footer></Footer>
+        
       </div>
     </>
   );

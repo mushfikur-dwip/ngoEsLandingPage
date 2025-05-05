@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@calcom/atoms": "^1.0.101-booker",
+    "@calcom/embed-react": "^1.5.3",
+    "@emailjs/browser": "^4.4.1",
     "@radix-ui/react-slot": "^1.2.0",
     "@tailwindcss/postcss": "^4.1.4",
     "@tailwindcss/vite": "^4.1.4",

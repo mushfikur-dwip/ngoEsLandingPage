@@ -214,8 +214,8 @@ const PricingPlans = () => {
                     </div>
                 </main>
             </div>
-            
-            
+
+
             <motion.div
                 ref={basicAnim.ref}
                 initial="hidden"
@@ -223,17 +223,18 @@ const PricingPlans = () => {
                 variants={modernFadeUp}
                 className="-my-4"
             >
-            
-                <div className="bg-[#EE2461] border border-[#ffff] rounded-3xl max-w-6xl mx-auto">
-                    <div className=" h-auto py-5 px-5 flex flex-col lg:flex-row lg:items-center lg:justify-around gap-6 items-center justify-center font-semibold text-4xl text-white">
-                        <div className='flex  flex-col'>
-                            <h1 className='text-[24px] lg:text-[44px] text-center lg:text-left'>Intake and Research</h1>
-                            <p className='text-[16px] lg:text-[18px] text-center lg:text-left leading-tight font-normal'>Choose your package and fill out the intake form. We’ll gather all the details to research and script your video.</p>
-                        </div>
-                        <div><img width={150} src="https://cdn.prod.website-files.com/6641e53a27d5f5cb8a6deda4/671c669f05faeb5e1b41f017_Our%20Process%2001.webp" alt="" /></div>
-                    </div>
-                </div>
+
+
             </motion.div>
+            <div className="bg-[#EE2461] border border-[#ffff] rounded-3xl max-w-6xl mx-auto">
+                <div className=" h-auto py-5 px-5 flex flex-col lg:flex-row lg:items-center lg:justify-around gap-6 items-center justify-center font-semibold text-4xl text-white">
+                    <div className='flex  flex-col'>
+                        <h1 className='text-[24px] lg:text-[44px] text-center lg:text-left'>Intake and Research</h1>
+                        <p className='text-[16px] lg:text-[18px] text-center lg:text-left leading-tight font-normal'>Choose your package and fill out the intake form. We’ll gather all the details to research and script your video.</p>
+                    </div>
+                    <div><img width={150} src="https://cdn.prod.website-files.com/6641e53a27d5f5cb8a6deda4/671c669f05faeb5e1b41f017_Our%20Process%2001.webp" alt="" /></div>
+                </div>
+            </div>
         </div>
     );
 };

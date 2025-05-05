@@ -52,10 +52,7 @@ const HeroSection = () => {
                 className="flex flex-col items-center text-center pb-4"
             >
                 <h1 className="text-[38px] text-white lg:text-7xl font-bold tracking-tight leading-10 lg:leading-[70px] px-6 lg:px-24">
-                    SaaS Videos that{" "}
-                    <span className="text-[#EE2461]">
-                        Educate,<br className="hidden lg:block" /> Engage, and Convert.
-                    </span>
+                    Tell Stories That Inspire <br /> Action Through<span className="text-[#EE2461]"><br className="hidden lg:block" />  Documentary & Animation.</span>
                 </h1>
             </motion.div>
 
@@ -78,7 +75,7 @@ const HeroSection = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    Order Now
+                   View Our Works
                 </motion.button>
                 <motion.button
                     className="btn text-[#ee2461] rounded-full border-2 border-[#ee2461] shadow hover:text-white hover:bg-[#ee2461] px-6 py-2"
@@ -92,13 +89,13 @@ const HeroSection = () => {
             {/* Video Dialog */}
             <motion.div
                 variants={fadeInUp}
-                className="w-full lg:max-w-[1050px] mx-auto mt-10"
+                className="w-full lg:max-w-[1500px] mx-auto mt-10"
             >
                 <HeroVideoDialog
                     className="block dark:hidden"
                     animationStyle="from-center"
-                    videoSrc="https://www.youtube.com/embed/XLb_bKDBLt0"
-                    thumbnailSrc="https://img.youtube.com/vi/XLb_bKDBLt0/maxresdefault.jpg"
+                    videoSrc="https://fast.wistia.net/embed/iframe/7izyf2evo2"
+                    thumbnailSrc="https://embed-ssl.wistia.com/deliveries/3e9b85f90594bbce87bc37e20eb3b068c0443d9a.jpg?image_resize=960"
                     thumbnailAlt="Video Thumbnail"
                 />
             </motion.div>

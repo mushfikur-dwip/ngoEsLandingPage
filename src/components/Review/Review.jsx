@@ -22,21 +22,23 @@ const Review = () => {
                         View Our <span className='text-[#ee2461]'>Past Work</span>
                     </h1>
                 </motion.div>
-                <div className='w-1/2'>
+                
+                {/* <div className='w-1/2'>
                     <div className='border-red-100'>
                         <p>asdfas</p>
                     </div>
+                </div> */}
+                
+                <div className='w-full grid grid-cols-1 lg:grid-cols-4 gap-5 '>
+                    <SingleReview></SingleReview>
+                    <SingleReview></SingleReview>
+                    <SingleReview></SingleReview>
+                    <SingleReview></SingleReview>
                 </div>
 
             </motion.div>
-            <div className='w-1/2 grid grid-cols-1 '>
-                <SingleReview></SingleReview>
-                <SingleReview></SingleReview>
-                <SingleReview></SingleReview>
-                <SingleReview></SingleReview>
-            </div>
-            <p>test</p>
-        </>
+            
+         </>
     );
 };
 
