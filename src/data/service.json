@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Animated Explainer Videos",
+    "description": "Engage your audience and simplify complex concepts with our animated explainer videos, tailored for SaaS businesses.",
+    "image": "https://cdn.prod.website-files.com/6641e53a27d5f5cb8a6deda4/671c65a5dd05a74a57565696_Animated_Explainer.webp",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "Product Demo Videos",
+    "description": "Showcase your SaaS product features and benefits with engaging product demo videos.",
+    "image": "https://cdn.prod.website-files.com/6641e53a27d5f5cb8a6deda4/671c65a5dd05a74a57565696_Animated_Explainer.webp",
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "name": "Customer Testimonial Videos",
+    "description": "Build trust with authentic customer testimonial videos tailored for SaaS businesses.",
+    "image": "https://cdn.prod.website-files.com/6641e53a27d5f5cb8a6deda4/671c65a5dd05a74a57565696_Animated_Explainer.webp",
+    "status": "inactive"
+  } ,
+   {
+    "id": 4,
+    "name": "Customer Testimonial Videos",
+    "description": "Build trust with authentic customer testimonial videos tailored for SaaS businesses.",
+    "image": "https://cdn.prod.website-files.com/6641e53a27d5f5cb8a6deda4/671c65a5dd05a74a57565696_Animated_Explainer.webp",
+    "status": "active"
+  }
+]

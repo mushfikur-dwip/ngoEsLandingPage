@@ -9,9 +9,13 @@ import {
   modernFadeLeft,
 } from "../../hooks/useScrollAnimation";
 
+import services from "../../data/service.json";
+
+
+
 const OurServices = () => {
   const { ref, controls } = useScrollAnimation();
-
+  console.log(services);
   return (
     <motion.div
       ref={ref}
@@ -32,16 +36,20 @@ const OurServices = () => {
           Solutions for SaaS Success
         </h1>
       </motion.div>
+      {/* Dynamic services rendering */}
+      
+      {
+        services.filter(service => service.status === "active").map((service, id) => (
+        <motion.div
+          key={service.id}
+          variants={modernFadeUp}
+            className="flex flex-col items-start">
+            <SingleService service={service} />
+          </motion.div>
+      ))}
+      
 
-      <motion.div variants={modernFadeUp}>
-        <SingleService />
-      </motion.div>
-      <motion.div variants={modernFadeUp}>
-        <SingleService />
-      </motion.div>
-      <motion.div variants={modernFadeUp}>
-        <SingleService />
-      </motion.div>
+      
     </motion.div>
   );
 };
