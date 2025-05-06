@@ -9,6 +9,7 @@ import Pricing from './components/PricingPlans';
 import Review from './components/Review/Review';
 import Faq from './components/Faq/Faq';
 import Footer from './components/Footer';
+import World from './components/World/WorldMap';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Pricing></Pricing>
         <Review></Review>
         <Faq></Faq>
+        <World></World>
         <Footer></Footer>
         
       </div>

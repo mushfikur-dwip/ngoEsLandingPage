@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Basic",
+    "price": 450,
+    "duration": "60 Seconds",
+    "bgColor": "white",
+    "textColor": "black",
+    "features": [
+      "We provide Script",
+      "We Provide Storyboard & Animatics",
+      "1 Professional Voice Over"
+    ],
+    "image": "https://res.cloudinary.com/williamsondesign/abstract-1.jpg",
+    "buttonText": "Set A Meeting",
+    "buttonLink": "#/"
+  },
+  {
+    "id": 2,
+    "title": "Startup",
+    "price": 450,
+    "duration": "60 Seconds",
+    "bgColor": "#ee2461",
+    "textColor": "white",
+    "features": [
+      "All features in Basic",
+      "Flexible call scheduling",
+      "Flexible call scheduling",
+      "15 TB cloud storage"
+    ],
+    "image": "https://res.cloudinary.com/williamsondesign/abstract-2.jpg",
+    "buttonText": "Set A Meeting",
+    "buttonLink": "#/"
+  },
+  {
+    "id": 3,
+    "title": "Enterprise",
+    "price": 450,
+    "duration": "60 Seconds",
+    "bgColor": "white",
+    "textColor": "black",
+    "features": [
+      "All features in Startup",
+      "Growth oriented",
+      "Unlimited cloud storage",
+      "Unlimited cloud storage"
+    ],
+    "image": "https://res.cloudinary.com/williamsondesign/abstract-3.jpg",
+    "buttonText": "Set A Meeting",
+    "buttonLink": "#/"
+  }
+]
