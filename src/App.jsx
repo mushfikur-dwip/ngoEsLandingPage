@@ -14,7 +14,7 @@ import World from './components/World/WorldMap';
 const App = () => {
   return (
     <>
-      <div className="bg-gradient-to-t from-[#0f172a]  to-[#334155] px-2" >
+      <div className="bg-gradient-to-t from-[#0f172a]  to-[#334155] px-2 lg:px-20" >
         <Navbar></Navbar>
         <HeroSection></HeroSection>
         <Brands></Brands>

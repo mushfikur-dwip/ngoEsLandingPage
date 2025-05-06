@@ -32,7 +32,7 @@ const OurWorks = () => {
                         <motion.div variants={modernFadeUp} key={work.id}>
                             <SingleWork work={work} />
                         </motion.div>
-))
+                    ))
                 }
 
             </div>

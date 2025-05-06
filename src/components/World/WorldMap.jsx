@@ -4,20 +4,20 @@ import WorldMap from 'react-svg-worldmap';
 const World = () => {
     const data = [
         { country: "cn", value: ": Completed 2 Projects" },
-        { country: "in", value: 1311559204 },
-        { country: "us", value: 331883986 },
-        { country: "id", value: 264935824 },
-        { country: "pk", value: 210797836 },
-        { country: "br", value: 210301591 },
-        { country: "ng", value: 208679114 },
-        { country: "bd", value: 161062905 },
-        { country: "ru", value: 141944641 },
-        { country: "mx", value: 127318112 },
+        { country: "in", value: ": Completed 2 Projects"  },
+        { country: "us", value: ": Completed 2 Projects"  },
+        { country: "id", value: ": Completed 2 Projects"  },
+        { country: "pk", value: ": Completed 2 Projects"  },
+        { country: "br", value: ": Completed 2 Projects"  },
+        { country: "ng", value: ": Completed 2 Projects"  },
+        { country: "bd", value: ": Completed 2 Projects"  },
+        { country: "ru", value: ": Completed 2 Projects"  },
+        { country: "mx", value: ": Completed 2 Projects"  },
     ];
 
     const stylingFunction = ({ countryValue, country, color, minValue, maxValue }) => {
         return {
-            fill: countryValue > 0 ? color : "#eee",
+            fill: countryValue !==undefined ? color : "#eee",
             stroke: "#000",
             strokeWidth: 0.5,
             strokeOpacity: 0.5,
@@ -26,7 +26,10 @@ const World = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center py-10 px-2">
+        <div className="flex flex-col items-center justify-center py-10 px-2 mt-10 ">
+            <h1 className='text-white font-bold text-center text-4xl lg:text-6xl lg:pr-[50px] mb-10 '>
+                Regional Experience Map
+            </h1>
             <WorldMap
                 color="#ee2461"
                 backgroundColor=""
