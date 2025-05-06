@@ -2,8 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import './Brands.css';
+import logos from '../../data/logos'; 
 
 const slideFromLeft = {
+
     hidden: { opacity: 0, x: -60 },
     visible: {
         opacity: 1,
@@ -24,7 +26,7 @@ const slideFromRight = {
 const Brands = () => {
     const { ref: leftRef, controls: leftControls } = useScrollAnimation();
     const { ref: rightRef, controls: rightControls } = useScrollAnimation();
-
+    // Check the first logo alt text
     return (
         <>
             <motion.div
@@ -34,9 +36,14 @@ const Brands = () => {
                 animate={leftControls}
                 className="wrapper"
             >
-                {[...Array(8)].map((_, index) => (
-                    <div key={`left-${index}`} className={`itemLeft item${index + 1}`}></div>
-                ))}
+                {
+                    logos.map((logo, index) => (
+                        <div key={`left-${index}`} className={`itemLeft item${index + 1} rounded-2xl`}>
+                            <img src={logo.url} key={logo.id} alt={''} className="logo" />
+                            </div>
+                    ))
+                }
+
             </motion.div>
 
             <motion.div
@@ -46,12 +53,17 @@ const Brands = () => {
                 animate={rightControls}
                 className="wrapper"
             >
-                {[...Array(8)].map((_, index) => (
-                    <div key={`right-${index}`} className={`itemRight item${index + 1}`}></div>
-                ))}
+                {
+                    logos.map((logo, index) => (
+                        <div key={`right-${index}`} className={`itemRight item${index + 1}`}>
+                            <img src={logo.url} key={logo.id} alt={''} className="logo" />
+                        </div>
+                    ))
+                }
             </motion.div>
         </>
     );
+    
 };
 
 export default Brands;

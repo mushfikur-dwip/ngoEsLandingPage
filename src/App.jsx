@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 const App = () => {
   return (
     <>
-      <div class="bg-gradient-to-t from-[#0f172a]  to-[#334155] px-2" >
+      <div className="bg-gradient-to-t from-[#0f172a]  to-[#334155] px-2" >
         <Navbar></Navbar>
         <HeroSection></HeroSection>
         <Brands></Brands>

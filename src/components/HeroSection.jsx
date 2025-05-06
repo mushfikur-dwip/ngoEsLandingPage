@@ -61,8 +61,7 @@ const HeroSection = () => {
                 variants={fadeInUp}
                 className="text-center text-white max-w-3xl mx-auto px-4"
             >
-                Simplify complex concepts, showcase your product's value, and engage
-                your audience with done-for-you video solutions.
+                From impact documentaries to training animations, we help NGOs like BRAC and CARE Bangladesh communicate with empathy, clarity, and purpose.
             </motion.p>
 
             {/* Buttons */}
