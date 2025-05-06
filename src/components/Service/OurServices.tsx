@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import BrandBtn from "../BrandBtn";
-import SingleService from "../SingleService";
+import SingleService from "./SingleService";
 import {
   useScrollAnimation,
   modernFadeUp,
@@ -11,11 +11,9 @@ import {
 
 import services from "../../data/service.json";
 
-
-
 const OurServices = () => {
   const { ref, controls } = useScrollAnimation();
-  console.log(services);
+  // console.log(services);
   return (
     <motion.div
       ref={ref}
@@ -37,19 +35,18 @@ const OurServices = () => {
         </h1>
       </motion.div>
       {/* Dynamic services rendering */}
-      
-      {
-        services.filter(service => service.status === "active").map((service, id) => (
-        <motion.div
-          key={service.id}
-          variants={modernFadeUp}
-            className="flex flex-col items-start">
+
+      {services
+        .filter((service) => service.status === "active")
+        .map((service, id) => (
+          <motion.div
+            key={service.id}
+            variants={modernFadeUp}
+            className="flex flex-col items-start"
+          >
             <SingleService service={service} />
           </motion.div>
-      ))}
-      
-
-      
+        ))}
     </motion.div>
   );
 };

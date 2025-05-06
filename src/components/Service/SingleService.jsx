@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { modernFadeUp, useScrollAnimation } from '../hooks/useScrollAnimation';
+import { modernFadeUp, useScrollAnimation } from '../../hooks/useScrollAnimation';
 
-const SingleService = ({service}) => {
+const SingleService = ({ service }) => {
     const { ref, controls } = useScrollAnimation();
 
-    
+
     return (
         <motion.div
             ref={ref}

@@ -3,9 +3,12 @@ import { motion } from 'framer-motion';
 import BrandBtn from '../BrandBtn';
 import SingleWork from './SingleWork';
 import { useScrollAnimation, modernFadeUp, staggerContainer, modernFadeLeft } from '../../hooks/useScrollAnimation';
+import work from '../../data/work.json';
+
 
 const OurWorks = () => {
     const { ref, controls } = useScrollAnimation();
+    // console.log(work);
 
     return (
         <motion.div
@@ -23,10 +26,15 @@ const OurWorks = () => {
             </motion.div>
 
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-9'>
-                <motion.div variants={modernFadeUp}><SingleWork /></motion.div>
-                <motion.div variants={modernFadeUp}><SingleWork /></motion.div>
-                <motion.div variants={modernFadeUp}><SingleWork /></motion.div>
-                <motion.div variants={modernFadeUp}><SingleWork /></motion.div>
+                {/* <motion.div variants={modernFadeUp}><SingleWork /></motion.div> */}
+                {
+                    work.filter((work) => work.status === "completed").map((work) => (
+                        <motion.div variants={modernFadeUp} key={work.id}>
+                            <SingleWork work={work} />
+                        </motion.div>
+))
+                }
+
             </div>
         </motion.div>
     );
