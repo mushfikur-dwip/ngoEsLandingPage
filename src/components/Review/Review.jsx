@@ -3,7 +3,7 @@ import SingleReview from './SingleReview';
 import { motion } from 'framer-motion';
 import BrandBtn from '../BrandBtn';
 import { useScrollAnimation, staggerContainer, modernFadeLeft } from '../../hooks/useScrollAnimation';
-import reviews from '../../data/reviews.json';
+import reviews from '../../data/Reviews.json';
 
 const Review = () => {
     const { ref, controls } = useScrollAnimation();
