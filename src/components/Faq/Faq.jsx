@@ -1,8 +1,9 @@
 import React from 'react';
 import SingleFaq from './SingleFaq';
-import Booker from '../Form/CalcomButton';
+import faq from '../../data/faq.json';
 
 const Faq = () => {
+    
     return (
         <div className='max-w-[1280px] mx-auto'>
             {/* title */}
@@ -13,10 +14,15 @@ const Faq = () => {
 
             {/* FAQs */}
 
+            {/* <SingleFaq></SingleFaq>
             <SingleFaq></SingleFaq>
             <SingleFaq></SingleFaq>
-            <SingleFaq></SingleFaq>
-            <SingleFaq></SingleFaq>
+            <SingleFaq></SingleFaq> */}
+            {
+                faq.map((faq, id)=>(
+                    <SingleFaq key={id} faq={faq} ></SingleFaq>
+                ))
+            }
             <div>
             </div>
         </div>

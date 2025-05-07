@@ -4,7 +4,7 @@ import { useScrollAnimation, modernFadeUp, } from '../../hooks/useScrollAnimatio
 
 export default function SingleWork({ work }) {
     const { ref, controls } = useScrollAnimation();
-    console.log(work);
+    // console.log(work);
     return (
         <motion.div
             ref={ref}

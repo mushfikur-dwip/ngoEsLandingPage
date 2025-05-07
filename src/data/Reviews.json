@@ -1,0 +1,48 @@
+[
+    {
+      "review": {
+        "ratingImage": "../../assets/fiveStar.svg",
+        "platformLogo": {
+          "url": "https://cdn.prod.website-files.com/66430b5a25aa84a73798d586/66826a1a1798b2a0832bc846_clutch.svg",
+          "alt": "clutch logo"
+        },
+        "title": "We were impressed with the quality of the animations and script quality.",
+        "description": "Boasting a keen understanding of the client's vision and product, Vidiosa brought their ideas to life and delivered high-quality animations and videos."
+      }
+    }
+    ,
+    {
+      "review": {
+        "ratingImage": "../../assets/fiveStar.svg",
+        "platformLogo": {
+          "url": "https://cdn.prod.website-files.com/66430b5a25aa84a73798d586/66826a1a1798b2a0832bc846_clutch.svg",
+          "alt": "clutch logo"
+        },
+        "title": "They are a great team to work with.",
+        "description": "Vidiosa's work has received positive feedback from internal stakeholders. The team is communicative and organized, ensuring a smooth workflow. They are flexible and accommodating, making them a reliable partner."
+      }
+    },
+    {
+      "review": {
+        "ratingImage": "../../assets/fiveStar.svg",
+        "platformLogo": {
+          "url": "https://cdn.prod.website-files.com/66430b5a25aa84a73798d586/66826a1a1798b2a0832bc846_clutch.svg",
+          "alt": "clutch logo"
+        },
+        "title": "They are a great team to work with.",
+        "description": "Vidiosa's work has received positive feedback from internal stakeholders. The team is communicative and organized, ensuring a smooth workflow. They are flexible and accommodating, making them a reliable partner."
+      }
+    }
+    ,
+    {
+      "review": {
+        "ratingImage": "../../assets/fiveStar.svg",
+        "platformLogo": {
+          "url": "https://cdn.prod.website-files.com/66430b5a25aa84a73798d586/66826a1a1798b2a0832bc846_clutch.svg",
+          "alt": "clutch logo"
+        },
+        "title": "They are a great team to work with.",
+        "description": "Vidiosa's work has received positive feedback from internal stakeholders. The team is communicative and organized, ensuring a smooth workflow. They are flexible and accommodating, making them a reliable partner."
+      }
+    }
+]

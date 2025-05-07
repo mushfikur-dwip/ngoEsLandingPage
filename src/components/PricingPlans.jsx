@@ -6,6 +6,7 @@ const PricingPlans = () => {
     const plans = [
         {
             name: 'Essential',
+            length: '30 Seconds',
             priceAnnual: '29',
             priceMonthly: '35',
             features: [
@@ -18,6 +19,7 @@ const PricingPlans = () => {
         },
         {
             name: 'Perform',
+            length: '60 Seconds',
             priceAnnual: '49',
             priceMonthly: '55',
             features: [
@@ -31,6 +33,7 @@ const PricingPlans = () => {
         },
         {
             name: 'Enterprise',
+            length: '120 Seconds',
             priceAnnual: '79',
             priceMonthly: '85',
             features: [
@@ -92,7 +95,7 @@ const PricingPlans = () => {
                                             <div className="inline-flex items-baseline mb-2">
                                                 <span className="text-slate-900 dark:text-slate-200 font-bold text-3xl">$</span>
                                                 <span className="text-slate-900 dark:text-slate-200 font-bold text-4xl">{isAnnual ? plan.priceAnnual : plan.priceMonthly}</span>
-                                                <span className="text-slate-500 font-medium">/mo</span>
+                                                <span className="text-slate-500 font-medium"> / {plan.length}</span>
                                             </div>
                                             <div className="text-sm text-slate-500 mb-5">There are many variations available, but the majority have suffered.</div>
                                             <a

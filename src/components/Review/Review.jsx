@@ -3,9 +3,11 @@ import SingleReview from './SingleReview';
 import { motion } from 'framer-motion';
 import BrandBtn from '../BrandBtn';
 import { useScrollAnimation, staggerContainer, modernFadeLeft } from '../../hooks/useScrollAnimation';
+import reviews from '../../data/reviews.json';
 
 const Review = () => {
     const { ref, controls } = useScrollAnimation();
+    
 
     return (
         <>
@@ -23,17 +25,10 @@ const Review = () => {
                     </h1>
                 </motion.div>
                 
-                {/* <div className='w-1/2'>
-                    <div className='border-red-100'>
-                        <p>asdfas</p>
-                    </div>
-                </div> */}
-                
                 <div className='w-full grid grid-cols-1 lg:grid-cols-4 gap-5 '>
-                    <SingleReview></SingleReview>
-                    <SingleReview></SingleReview>
-                    <SingleReview></SingleReview>
-                    <SingleReview></SingleReview>
+                    {reviews.map((review, index) => (
+                        <SingleReview key={index} {...review} />
+                    ))}
                 </div>
 
             </motion.div>
