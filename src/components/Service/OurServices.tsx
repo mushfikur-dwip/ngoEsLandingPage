@@ -27,11 +27,11 @@ const OurServices = () => {
         className="py-3 flex flex-col items-start"
       >
         <BrandBtn />
-        <h1 className="text-white font-bold text-5xl lg:pr-[50px]">
-          <span className="bg-gradient-to-r from-[#EE2461] to- text-transparent bg-clip-text">
+        <h1 className="text-white  font-bold text-5xl lg:pr-[50px]">
+          <span className="bg-gradient-to-r from-[#EE2461] to-white text-transparent bg-clip-text">
             Professional Video
           </span>{" "}
-          Solutions for SaaS Success
+          Solutions for Success
         </h1>
       </motion.div>
       {/* Dynamic services rendering */}

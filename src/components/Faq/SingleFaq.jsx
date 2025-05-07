@@ -1,7 +1,8 @@
 import React from 'react';
 
 const SingleFaq = ({ faq }) => {
-    console.log(faq);
+    // console.log(f
+    // aq);
     const { question, answer } = faq;
     return (
         <div>

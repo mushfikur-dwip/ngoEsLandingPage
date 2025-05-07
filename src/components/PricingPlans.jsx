@@ -50,8 +50,15 @@ const PricingPlans = () => {
  
     return (
         <div className="relative font-inter antialiased">
-            <main className="relative min-h-screen flex flex-col justify-center overflow-hidden">
+            <main className="relative  flex flex-col justify-center overflow-hidden">
                 <div className="w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+                    <div>
+                        <h1 className="text-white text-center mb-5 font-bold text-5xl lg:pr-[50px]">
+                            <span className="bg-gradient-to-r from-[#EE2461] to-[#fff] text-transparent bg-clip-text">
+                                Pricing Plans
+                            </span> for Success
+                        </h1>
+                    </div>
                     <div>
                         {/* Pricing toggle */}
                         <div className="flex justify-center max-w-[14rem] m-auto mb-8 lg:mb-16">

@@ -20,7 +20,7 @@ const OurWorks = () => {
         >
             <motion.div variants={modernFadeLeft} className='py-10 flex flex-col items-start'>
                 <BrandBtn />
-                <h1 className='text-white font-bold text-6xl lg:pr-[50px]'>
+                <h1 className='text-white font-bold text-5xl lg:pr-[50px]'>
                     View Our <span className='text-[#ee2461]'>Past Work</span>
                 </h1>
             </motion.div>

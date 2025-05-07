@@ -14,7 +14,12 @@ import World from './components/World/WorldMap';
 const App = () => {
   return (
     <>
-      <div className="bg-gradient-to-t from-[#0f172a]  to-[#334155] px-2 lg:px-20" >
+      <div class="relative h-full  bg-slate-950"><div class="absolute bottom-0 left-[-10%] right-0 top-[-10%] h-[100vh]  rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div><div class="absolute bottom-0 right-[-20%] top-[-10%] h-[100vh]  rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div></div>
+       
+      
+      
+      
+      <div className="bg-slate-950 px-2 lg:px-20" >
         <Navbar></Navbar>
         <HeroSection></HeroSection>
         <Brands></Brands>
