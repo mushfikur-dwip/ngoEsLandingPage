@@ -10,11 +10,12 @@ import Review from './components/Review/Review';
 import Faq from './components/Faq/Faq';
 import Footer from './components/Footer';
 import World from './components/World/WorldMap';
+import CalComButton from './components/Form/CalcomButton';
 
 const App = () => {
   return (
     <>
-      <div class="relative h-full  bg-slate-950"><div class="absolute bottom-0 left-[-10%] right-0 top-[-10%] h-[100vh]  rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div><div class="absolute bottom-0 right-[-20%] top-[-10%] h-[100vh]  rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div></div>
+      <div className="relative h-full  bg-slate-950"><div className="absolute bottom-0 left-[-10%] right-0 top-[-10%] h-[100vh]  rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div><div className="absolute bottom-0 right-[-20%] top-[-10%] h-[100vh]  rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div></div>
        
       
       
@@ -31,6 +32,7 @@ const App = () => {
         <Faq></Faq>
         <World></World>
         <Footer></Footer>
+        <CalComButton />
         
       </div>
     </>
